@@ -7,47 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Pantalla de inicio -->
-  <header class="hero">
-    <h1>Bienvenido a Tu Guía de Viaje</h1>
-    <p>Explora, traduce y viaja con seguridad en un solo lugar.</p>
-    <button onclick="mostrarApp()">Explorar mi viaje</button>
-  </header>
+  <!-- Contenedor tipo móvil -->
+  <div class="app-container">
+    <header>
+      <h1>🌎 Mi Viaje Seguro</h1>
+      <p>Tu compañero de turismo en un solo lugar</p>
+    </header>
 
-  <!-- Contenido de la app -->
-  <main id="app" style="display:none;">
-    <!-- Sección de mapa -->
-    <section class="mapa">
-      <h2>Mapa Interactivo</h2>
-      <img src="assets/mapa-demo.png" alt="Mapa turístico" class="mapa-img">
-    </section>
-
-    <!-- Traductor -->
-    <section class="traductor">
-      <h2>Traductor rápido</h2>
-      <input type="text" id="texto" placeholder="Escribe en español...">
-      <button onclick="traducir()">Traducir</button>
-      <p id="resultado"></p>
-    </section>
-
-    <!-- Alertas -->
-    <section class="alertas">
-      <h2>Alertas en tiempo real</h2>
-      <div class="alerta">🌦️ Lluvia ligera en la zona centro</div>
-      <div class="alerta">⚠️ Zona no recomendada después de las 9:00 p.m.</div>
-    </section>
-
-    <!-- Agenda -->
-    <section class="agenda">
-      <h2>Actividades y promociones</h2>
-      <ul>
-        <li>🎭 Festival cultural en el centro histórico</li>
-        <li>🍽️ Descuento 20% en Restaurante El Mirador</li>
-        <li>🏞️ Tour guiado al volcán local</li>
-      </ul>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <!-- Menú principal -->
+    <main class="menu">
+      <div class="opcion">🗺️ <span>Mapa seguro</span></div>
+      <div class="opcion">🌍 <span>Traductor</span></div>
+      <div class="opcion">⚠️ <span>Alertas</span></div>
+      <div class="opcion">🎭 <span>Actividades</span></div>
+      <div class="opcion">🏨 <span>Promociones</span></div>
+    </main>
+  </div>
 </body>
 </html>
